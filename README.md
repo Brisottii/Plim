@@ -27,5 +27,5 @@ plim/
 
 ## Links
 
-- GitHub: _(cole aqui o link do repositório)_
-- Figma: _(cole aqui o link do arquivo)_
+- GitHub: https://github.com/Brisotii/Plim---Gest-o-de-Finan-as..git
+- Figma: https://www.figma.com/proto/sWUIbVFkguogSgIAiNbtg4/Plim-Gest%C3%A3o-de-finan%C3%A7as?node-id=0-1&t=0rRdC6e3TO4wmwfk-1
