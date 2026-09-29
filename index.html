@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plim ✦ | Meu Perfil</title>
+
+  <!-- Google Fonts (opcional - se não carregar, cai numa fonte padrão sem quebrar o layout) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- CSS próprio -->
+  <link rel="stylesheet" href="./dist/output.css" />
+</head>
+<body class="bg-[#F4E9D3] text-stone-700">
+
+  <div class="flex flex-col lg:flex-row min-h-screen">
+
+    <!-- ===================== SIDEBAR ===================== -->
+    <aside class="w-full lg:w-64 bg-[#6D28D9] text-white flex flex-col lg:fixed lg:top-0 lg:left-0 lg:h-screen z-20">
+
+      <div class="flex items-center justify-between px-6 py-5 lg:py-7">
+        <h1 class="logo-text text-2xl">Plim<span class="text-amber-300">✦</span></h1>
+        <div class="lg:hidden w-9 h-9 rounded-full bg-white/15 flex items-center justify-center text-sm font-semibold">
+          BB
+        </div>
+      </div>
+
+      <nav class="nav-scroll flex lg:flex-col gap-2 px-4 pb-4 lg:pb-2 overflow-x-auto lg:overflow-visible">
+        <a href="#" class="nav-item"><span class="nav-icon">✦</span> Início</a>
+        <a href="#" class="nav-item"><span class="nav-icon">✦</span> Despesas</a>
+        <a href="#" class="nav-item"><span class="nav-icon">✦</span> Relatórios</a>
+        <a href="#" class="nav-item"><span class="nav-icon">✦</span> Categorias</a>
+        <a href="#" class="nav-item"><span class="nav-icon">✦</span> Metas</a>
+        <a href="#" class="nav-item nav-item-active"><span class="nav-icon">✦</span> Perfil</a>
+      </nav>
+
+      <div class="hidden lg:block mt-auto p-6">
+        <div class="bg-white/15 rounded-full flex items-center gap-3 px-4 py-2.5">
+          <div class="w-8 h-8 rounded-full bg-white/30 flex items-center justify-center text-sm font-semibold">BB</div>
+          <span class="text-sm font-medium">Barbara B.</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- ===================== CONTEÚDO ===================== -->
+    <main class="flex-1 lg:ml-64 px-5 sm:px-8 lg:px-12 py-8 lg:py-10">
+
+      <p class="text-sm text-stone-500 mb-1">
+        Início <span class="mx-1">›</span> <span class="text-[#6D28D9] font-semibold">Perfil</span>
+      </p>
+      <h2 class="heading-text text-3xl text-[#4C1D95] mb-1">Meu perfil</h2>
+      <p class="text-stone-500 mb-8">Veja seus dados e gerencie seu cartão Plim</p>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+        <!-- ---------- Coluna do perfil ---------- -->
+        <section class="lg:col-span-1 panel-card flex flex-col items-center text-center p-7">
+          <div class="w-24 h-24 rounded-full bg-[#6D28D9] text-white flex items-center justify-center text-3xl heading-text mb-4">
+            BB
+          </div>
+          <h3 class="heading-text text-xl text-[#4C1D95]">Barbara Brisotti</h3>
+          <p class="text-sm text-stone-500 mb-3">barbara.brisotti@email.com</p>
+          <span class="status-pill status-active mb-5">Cliente desde Jan/2026</span>
+
+          <dl class="w-full text-left text-sm space-y-3 mb-6">
+            <div class="flex justify-between border-t border-stone-200 pt-3">
+              <dt class="text-stone-500">CPF</dt>
+              <dd class="font-medium">•••.•••.•••-12</dd>
+            </div>
+            <div class="flex justify-between border-t border-stone-200 pt-3">
+              <dt class="text-stone-500">Telefone</dt>
+              <dd class="font-medium">(11) 9••••-4521</dd>
+            </div>
+            <div class="flex justify-between border-t border-stone-200 pt-3">
+              <dt class="text-stone-500">Plano</dt>
+              <dd class="font-medium">Plim Pessoal</dd>
+            </div>
+          </dl>
+
+          <button class="btn-outline w-full">Editar perfil</button>
+        </section>
+
+        <!-- ---------- Coluna do cartão ---------- -->
+        <section class="lg:col-span-2 flex flex-col gap-6">
+
+          <!-- Cartão virtual -->
+          <div class="virtual-card">
+            <div class="virtual-card-blob virtual-card-blob-1"></div>
+            <div class="virtual-card-blob virtual-card-blob-2"></div>
+
+            <div class="relative z-10 flex justify-between items-start">
+              <span class="logo-text text-xl">Plim<span class="text-amber-300">✦</span></span>
+              <span class="text-xs bg-white/20 rounded-full px-3 py-1 font-medium">Cartão virtual</span>
+            </div>
+
+            <p class="relative z-10 text-2xl sm:text-3xl tracking-[0.18em] mt-8 mb-6 font-medium">
+              •••• •••• •••• 4821
+            </p>
+
+            <div class="relative z-10 flex justify-between items-end text-sm">
+              <div>
+                <p class="text-white/60 text-xs mb-1">Titular</p>
+                <p class="font-medium tracking-wide">BARBARA BRISOTTI</p>
+              </div>
+              <div class="text-right">
+                <p class="text-white/60 text-xs mb-1">Validade</p>
+                <p class="font-medium">09/29</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Resumo do cartão -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div class="info-card card-yellow">
+              <p class="info-label">Limite disponível</p>
+              <p class="info-value text-[#B45309]">R$ 2.760,00</p>
+              <p class="info-sub">de R$ 5.000,00</p>
+            </div>
+            <div class="info-card card-green">
+              <p class="info-label">Fatura atual</p>
+              <p class="info-value text-[#15803D]">R$ 890,00</p>
+              <p class="info-sub">vence em 10/07</p>
+            </div>
+            <div class="info-card card-red">
+              <p class="info-label">Status do cartão</p>
+              <p class="info-value text-[#B91C1C] text-2xl">Ativo</p>
+              <p class="info-sub">sem bloqueios</p>
+            </div>
+          </div>
+
+          <!-- Ações -->
+          <div class="flex flex-wrap gap-3">
+            <button class="btn-primary">Bloquear cartão</button>
+            <button class="btn-outline">Ver CVV</button>
+            <button class="btn-outline">Solicitar novo cartão</button>
+          </div>
+        </section>
+      </div>
+
+      <!-- ---------- Segurança ---------- -->
+      <section class="mt-8">
+        <h3 class="heading-text text-lg text-[#4C1D95] mb-3">Segurança</h3>
+        <div class="panel-card divide-y divide-stone-200 overflow-hidden">
+          <a href="#" class="settings-row">
+            <span>Alterar senha</span>
+            <span class="chevron">›</span>
+          </a>
+          <a href="#" class="settings-row">
+            <span>Autenticação em duas etapas</span>
+            <span class="chevron">›</span>
+          </a>
+          <a href="#" class="settings-row">
+            <span>Notificações de transações</span>
+            <span class="chevron">›</span>
+          </a>
+        </div>
+      </section>
+
+      <footer class="text-center text-xs text-stone-400 mt-10 pb-4">
+        Plim ✦ — projeto acadêmico para fins de estudo
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
